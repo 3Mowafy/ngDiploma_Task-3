@@ -1,0 +1,10 @@
+<div class="card bg-light my-4 text-black" (click)="displayMealDescription()">
+    <ng-content select="img"></ng-content>
+    <div class="card-body">
+        <div class="text-center">
+            <h5 class="card-title" title="{{meal.name}}">{{meal.name}}</h5>
+            <p class="text-muted">{{meal.description}}</p>
+        </div>
+    </div>
+    <ng-content select="button"></ng-content>
+</div>
