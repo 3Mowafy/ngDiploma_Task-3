@@ -48,6 +48,6 @@ export class AppComponent {
   }
 
   displayMealDescription() {
-    console.log(this.getRandomDescription());
+    alert(this.getRandomDescription());
   }
 }

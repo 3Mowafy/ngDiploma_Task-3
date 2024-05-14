@@ -1,9 +1,10 @@
-<div class="container row mx-auto">
-  <div class="col-md-6 col-lg-4 col-xl-3" *ngFor="let meal of meals">
-    <app-meals [meal]="meal">
-      <img src="{{meal.image}}" class="card-img-top" alt="{{meal.name}}">
-
-      <button class="btn btn-primary mx-2" (click)="displayMealDescription()">View Random Description</button>
-    </app-meals>
+<div class="container mx-auto mt-4 text-center">
+  <button class="btn btn-primary w-50" (click)="displayMealDescription()">View Random Description</button>
+  <div class="row">
+    <div class="col-md-6 col-lg-4 col-xl-3" *ngFor="let meal of meals">
+      <app-meals [meal]="meal">
+        <img src="{{meal.image}}" class="card-img-top" alt="{{meal.name}}">
+      </app-meals>
+    </div>
   </div>
 </div>
